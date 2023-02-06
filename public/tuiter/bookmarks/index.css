@@ -1,5 +1,4 @@
 #wd-title {
-    position:absolute;
     top:12px;
     left:16px;
     font-size:13px;
@@ -12,10 +11,38 @@
 #wd-title-heading {
     color: white;
     font-size: 20px;
+    margin-top:0; /*Using parent's offset from the top*/
 }
 
 .wd-tuit-expanded-base {
     margin-top: 12px;
-    margin-left: 16px;
+}
+
+.wd-pfp-frame {
+    width:48px;
+    height:48px;
+    border-radius: 24px;
+}
+
+.wd-tuit-header {
+    position: relative;
+    vertical-align:top;
+    left: 60px;
+    top: -48px; /*negative height of image - text size*/
+    font-size: 15px;
+    color:lightgray;
+}
+.wd-tuit-name {
     color:white;
+    font-weight: bold;
+}
+
+.wd-tuit-content {
+    position:relative;
+    left: 60px;
+    top: -53px;
+    color:white;
+    font-size: 15px;
+    right: 16px;
+    max-width: 506px;
 }
