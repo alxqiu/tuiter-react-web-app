@@ -1,0 +1,21 @@
+#wd-title {
+    position:absolute;
+    top:12px;
+    left:16px;
+    font-size:13px;
+    color:lightgray;
+    padding-bottom: 12px;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 12px;
+    width:100%;
+}
+#wd-title-heading {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-tuit-expanded-base {
+    margin-top: 12px;
+    margin-left: 16px;
+    color:white;
+}
