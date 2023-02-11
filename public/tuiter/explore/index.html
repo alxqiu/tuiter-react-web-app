@@ -3,87 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="index.css" rel="stylesheet"/>
-    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body class="wd-body">
-
-<input placeholder="Search Tuiter"
-       type="text"
-       id="wd-search-bar"/>
-<a href="explore-settings.html">
-    <img src="../media/settings.png" id="wd-gear-icon">
-</a>
-
-<table id="wd-menu-row">
-    <thead>
-    <tr>
-        <th class="wd-menu-cell" id="wd-highlighted-link" >
-            For you
-        </th>
-        <th class="wd-menu-cell">Trending</th>
-        <th class="wd-menu-cell">COVID-19</th>
-        <th class="wd-menu-cell">News</th>
-        <th class="wd-menu-cell">Sports</th>
-        <th class="wd-menu-cell">Entertainment</th>
-    </tr>
-    </thead>
-</table>
-
-<ul id="wd-tuit-list">
-    <li class="wd-tuit-base">
-        <div class="wd-caption">
-            Trending in Science
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-3 flex-shrink-1">
+            <!-- Left Navigation Bar -->
+            <div class="list-group">
+                <li class="list-group-item"><i class="fab fa-twitter fa-2x"></i></li>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-hashtag"></i>
+                        Explore
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-bell"></i>
+                        Notifications
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-envelope"></i>
+                        Messages
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-bookmark"></i>
+                        Bookmarks
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-list"></i>
+                        Lists
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-list"></i>
+                    </div>
+                </a>
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </a>
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <i class="fas fa-ellipsis-h"></i>
+                        More
+                    </div>
+                    <div class="d-xl-none d-xxl-none">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <a href="../tuit.html" class="btn btn-primary w-100">Tuit</a>
         </div>
-        Europa Clipper
-        <div class="wd-caption">
-            10,032 Tuits
+        <div class="col-6 flex-grow-1">
+            <!-- If we add d-flex it looks bad -->
+            <!-- Main Middle Content -->
+            <div class="input-group mb-3">
+                <span class="rounded-pill input-group-prepend btn">
+                    <button class="btn rounded-pill border-0 form-control-feedback" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+                <input id="wd-search-bar" type="text" class="form-control rounded-pill me-4" placeholder="Search Tuiter">
+                <label for="wd-search-bar"
+                       class="col-form-label">
+                    <a href="#"><span class="fa fa-cog fa-2x"></span></a></label>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
         </div>
-    </li>
-    <li class="wd-tuit-base">
-        NPR &emsp;
-        <span class="wd-caption">
-        Yesterday
-        </span>
-        <br>
-        Jackson Hole
-        <img src="../media/hole.jfif" class="wd-image-frame">
-    </li>
-    <li class="wd-tuit-base">
-        <div class="wd-caption">
-            Trending in Technology
+        <div class="col-3 d-none d-xxl-block d-xl-block d-lg-block">
+            <!-- Right Accounts Bar -->
+            <div class="list-group">
+                <li class="list-group-item">Who to follow</li>
+                <li class="list-group-item">Java</li>
+            </div>
         </div>
-        ChatGPT
-        <div class="wd-caption">
-            2,015 Tuits
-        </div>
-    </li>
-    <li class="wd-tuit-base">
-        <div class="wd-caption">
-            Science
-        </div>
-        Northeastern wins NASA BIG Idea
-        <img src="../media/neu-trending.jpg" class="wd-image-frame">
-    </li>
-    <li class="wd-tuit-base">
-        <div class="wd-caption">
-            Technology
-        </div>
-        Linux Beats Windows
-        <img src="../media/linux.PNG" class="wd-image-frame">
-    </li>
-
-    <li class="wd-tuit-base">
-        Costco &emsp;
-        <span class="wd-caption">
-        Yesterday
-        </span>
-        <br>
-        Free Corn
-        <img src="../media/corn.jfif" class="wd-image-frame">
-    </li>
-
-</ul>
+    </div>
+</div>
 
 </body>
 </html>
