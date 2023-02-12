@@ -85,12 +85,12 @@
             <!-- If we add d-flex it looks bad -->
             <!-- Main Middle Content -->
             <div class="input-group mb-3">
-                <span class="rounded-pill input-group-prepend btn">
-                    <button class="btn rounded-pill border-0 form-control-feedback" type="button">
+                <span class="position-absolute top-50 translate-middle-y rounded-pill input-group-prepend btn ps-2 pe-2">
+                    <button class="btn rounded-pill border-0 form-control-feedback btn-sm" type="button">
                         <i class="fa fa-search"></i>
                     </button>
                 </span>
-                <input id="wd-search-bar" type="text" class="form-control rounded-pill me-4" placeholder="Search Tuiter">
+                <input id="wd-search-bar" type="text" class="form-control rounded-pill ps-5 me-4" placeholder="Search Tuiter">
                 <label for="wd-search-bar"
                        class="col-form-label">
                     <a href="#"><span class="fa fa-cog fa-2x"></span></a></label>
@@ -117,7 +117,48 @@
             <!-- Right Accounts Bar -->
             <div class="list-group">
                 <li class="list-group-item">Who to follow</li>
-                <li class="list-group-item">Java</li>
+                <li class="list-group-item pb-2 pt-2">
+                    <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
+                        <div class="col-sm-2">
+                            <img class="rounded-circle img-fluid" src="../media/java.png">
+                        </div>
+                    </span>
+                    <div class="ms-5 ps-0">
+                        <div>
+                            <b>Java</b>
+                        </div>
+
+                        <div>
+                            @java
+                        </div>
+                    </div>
+                    <span class="position-absolute top-50 end-0 translate-middle-y">
+                        <button class="btn rounded-pill btn-primary pt-2 pb-2 me-3" type="button">
+                            Follow
+                        </button>
+                    </span>
+                </li>
+
+                <li class="list-group-item pb-2 pt-2">
+                    <span class="position-absolute top-50 start-0 translate-middle-y ms-2">
+                        <div class="col-sm-2">
+                            <img class="rounded-circle img-fluid" src="../media/relativity.jpg">
+                        </div>
+                    </span>
+                    <div class="ms-5 ps-0">
+                        <div>
+                            <b>Relativity Space</b><i></i>
+                        </div>
+                        <div>
+                            @relativityspace
+                        </div>
+                    </div>
+                    <span class="position-absolute top-50 end-0 translate-middle-y">
+                        <button class="btn rounded-pill btn-primary pt-2 pb-2 me-3" type="button">
+                            Follow
+                        </button>
+                    </span>
+                </li>
             </div>
         </div>
     </div>
