@@ -1,63 +1,10 @@
-#wd-search-bar {
-    color: white;
-    border-radius: 50px;
-    background: darkgrey 7px 7px;
-    height: 40px;
-    font-size: 15px;
-    text-align: center;
+/*
+wtf == who to follow
+*/
+.wd-wtf-icon {
+    max-height: 300px;
 }
 
-#wd-gear-icon {
-    position: absolute;
-    filter: brightness(2);
-    width: 25px;
-    height: 25px;
-    right: 12px;
-}
-
-/*  4.1 B */
-
-#wd-menu-row {
-    width: 100%;
-}
-
-.wd-menu-cell {
-    padding: 16px;
-    font-size: 15px;
-    color: rgb(110, 118, 125);
-    border-bottom: solid rgb(110, 118, 125);
-    width: 16%;
-}
-
-#wd-highlighted-link {
-    color: rgb(29, 161, 242);
-    border-bottom : solid rgb(29, 161, 242);
-}
-
-/* 4.1 C, D, E */
-
-#wd-tuit-list {
-    list-style-type: none;
-    color: white;
-    font-weight: bold;
-}
-.wd-tuit-base {
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    border-top: groove rgb(110, 118, 125);
-    height: 100px;
-    object-fit: contain;
-}
-.wd-caption {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-
-.wd-image-frame {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    position: absolute;
-    vertical-align: center;
-    right: 16px
+.wd-ps-img {
+    max-height: 90px;
 }
