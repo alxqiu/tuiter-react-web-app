@@ -4,7 +4,7 @@ const NavigationSidebar = () => {
      <a class="list-group-item" href="/public">
        <i class="fab fa-twitter"></i>
      </a>
-     <a href="../../home.html" class="list-group-item list-group-item-action">
+     <a href="../home.html" class="list-group-item list-group-item-action">
         <i class="fas fa-home"></i>
         <span class="d-none d-xl-inline">Home</span>
      </a>
@@ -38,9 +38,9 @@ const NavigationSidebar = () => {
     </a>
    </div>
    <div class="d-grid mt-2">
-     <a href="tweet.html"
-        class="btn btn-primary btn-block rounded-pill">
-        Tweet</a>
+     <a href="../tuit.html"
+        class="btn btn-primary btn-block rounded-pill w-100">
+        Tuit</a>
    </div>
  `);
 }
