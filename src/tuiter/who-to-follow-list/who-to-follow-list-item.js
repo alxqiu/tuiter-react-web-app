@@ -8,7 +8,8 @@ const WhoToFollowListItem = (
         <li className="list-group-item pb-2 pt-2">
             <span className="position-absolute top-50 start-0 translate-middle-y ms-2">
                 <div className="col-2">
-                    <img className="rounded-circle img-fluid wd-wtf-icon" src={`/tuiter/media/${who.avatarIcon}`}/>
+                    <img className="rounded-circle img-fluid wd-wtf-icon"
+                         src={`/tuiter/media/${who.avatarIcon}`} alt=""/>
                 </div>
             </span>
             <div className="ms-5 ps-2">
