@@ -9,13 +9,15 @@ const WhoToFollowListItem = (
             <span className="position-absolute top-50 start-0 translate-middle-y ms-2">
                 <div className="col-2">
                     <img className="rounded-circle img-fluid wd-wtf-icon"
-                         src={`/tuiter/media/${who.avatarIcon}`} alt=""/>
+                         src={`/tuiter/media/${who.avatarIcon}`}
+                         alt={`Not available`}
+                    />
                 </div>
             </span>
             <div className="ms-5 ps-2">
                 <div>
-                    <b>{who.userName}</b>
-                    <i className="fas fa-check-circle"></i>
+                    <b>{who.userName} </b>
+                    <i className="bi bi-check-circle-fill"></i>
                 </div>
                 <div>
                     @{who.handle}
