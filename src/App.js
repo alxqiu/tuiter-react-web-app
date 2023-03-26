@@ -10,7 +10,7 @@ function App() {
           <div className="container">
               <Routes>
                   {/* 2.7 index + no path is home screen */}
-                  <Route index element={<Labs/>}/>
+                  <Route path="/*" element={<Labs/>}/>
                   <Route path="/hello"
                          element={<HelloWorld/>}/>
                   <Route path="/tuiter"
