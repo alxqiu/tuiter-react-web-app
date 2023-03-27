@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {updateLiked} from "./tuits-reducer"
 
 const TuitItem = (
     {
@@ -11,6 +13,12 @@ const TuitItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch()
+
+    const onLikeButton = () => {
+        dispatch(updateLiked(tuit))
+    }
+
     return (
         <div className="list-group-item pt-2 pb-2">
             <span className="position-absolute top-0 start-0 ms-3 mt-2">
@@ -46,7 +54,8 @@ const TuitItem = (
                         {tuit.retuits}
                     </div>
                     <div className="col-3">
-                        <i className={tuit.liked ? "wd-icon-liked bi bi-heart-fill" : "bi bi-heart"}></i>
+                        <i className={tuit.liked ? "wd-icon-liked bi bi-heart-fill" : "bi bi-heart"}
+                        onClick={onLikeButton}></i>
                         {'\u00A0\u00A0'}
                         {tuit.likes}
                     </div>

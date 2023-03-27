@@ -8,9 +8,9 @@ const TuitList = () => {
         <div>
             <ul className="list-group pt-2">
                 {
-                    tuitsArray.map(tuit =>
+                    tuitsArray.map(item =>
                         <TuitItem
-                            key={tuit._id} tuit={tuit}/> )
+                            key={item._id} tuit={item}/> )
                 }
             </ul>
         </div>
