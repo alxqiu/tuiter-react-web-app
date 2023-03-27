@@ -1,9 +1,11 @@
 import TuitsList from "../tuits/tuits-list";
+import WhatsHappening from "./whats-happening";
 
 function Home() {
     return (
         <div>
-            <h1>Home</h1>
+            <h4>Home</h4>
+            <WhatsHappening/>
             <TuitsList/>
         </div>
     )

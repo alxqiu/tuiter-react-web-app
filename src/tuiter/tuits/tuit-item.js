@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {updateLiked} from "./tuits-reducer"
+import {updateLiked, deleteTuit} from "./tuits-reducer"
 
 const TuitItem = (
     {
@@ -18,6 +18,9 @@ const TuitItem = (
     const onLikeButton = () => {
         dispatch(updateLiked(tuit))
     }
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
 
     return (
         <div className="list-group-item pt-2 pb-2">
@@ -29,7 +32,7 @@ const TuitItem = (
                     />
                 </div>
             </span>
-            <div className="ms-5 col-10 ps-3">
+            <div className="ms-5 ps-3">
                 <div>
                     <span className="fw-bold">{tuit.userName}</span>
                     <span>
@@ -64,6 +67,8 @@ const TuitItem = (
                     </div>
                 </div>
             </div>
+            <i className="position-absolute top-0 end-0 bi bi-x-lg me-3 mt-2"
+               onClick={() => deleteTuitHandler(tuit._id)}></i>
         </div>
     );
 };
