@@ -11,12 +11,14 @@ const NavigationSidebar = (
                 <span className="d-none d-xl-inline"> Tuiter</span>
             </a>
             <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home'?'active':''}`}
+                href={'/tuiter/home'}>
                 <i className="bi bi-house-door-fill"></i>
                 <span className="d-none d-xl-inline"> Home</span>
             </a>
             <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`}
+               href={'/tuiter/explore'}>
                 <i className="bi bi-hash"></i>
                 <span className="d-none d-xl-inline"> Explore</span>
             </a>
