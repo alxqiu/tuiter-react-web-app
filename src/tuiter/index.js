@@ -16,7 +16,7 @@ import HelloWorld from "../labs/a6/hello-world";
 import Home from "./home"
 import {BrowserRouter} from "react-router-dom";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (

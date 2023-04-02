@@ -1,27 +1,13 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {updateLiked, deleteTuit} from "./tuits-reducer"
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "./tuit-stats";
 
-const TuitItem = (
-    {
-        tuit = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
-        }
-    }
-) => {
-    const dispatch = useDispatch()
-
-    const onLikeButton = () => {
-        dispatch(updateLiked(tuit))
-    }
+const TuitItem = ({tuit = {}}) => {
+    const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
-
     return (
         <div className="list-group-item pt-2 pb-2">
             <span className="position-absolute top-0 start-0 ms-3 mt-2">
@@ -45,30 +31,13 @@ const TuitItem = (
                     </span>
                 </div>
                 {tuit.tuit}
-                <div className="row pt-3">
-                    <div className="col-3">
-                        <i className="bi bi-chat"></i>
-                        {'\u00A0\u00A0'}
-                        {tuit.replies}
-                    </div>
-                    <div className="col-3">
-                        <i className="bi bi-arrow-repeat"></i>
-                        {'\u00A0\u00A0'}
-                        {tuit.retuits}
-                    </div>
-                    <div className="col-3">
-                        <i className={tuit.liked ? "wd-icon-liked bi bi-heart-fill" : "bi bi-heart"}
-                        onClick={onLikeButton}></i>
-                        {'\u00A0\u00A0'}
-                        {tuit.likes}
-                    </div>
-                    <div className="col-3">
-                        <i className="bi bi-share"></i>
-                    </div>
-                </div>
+                <TuitStats tuit={tuit}/>
             </div>
-            <i className="position-absolute top-0 end-0 bi bi-x-lg me-3 mt-2"
-               onClick={() => deleteTuitHandler(tuit._id)}></i>
+            <button
+                className="position-absolute btn btn-outline-info btn-sm top-0 end-0 bi bi-x-lg me-1 mt-1"
+                onClick={() => deleteTuitHandler(tuit._id)}>
+            </button>
+
         </div>
     );
 };
